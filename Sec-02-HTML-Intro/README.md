@@ -2,7 +2,9 @@
 
 ## Heading Tags
 
+```
 <h1> through <h7>
+```
 
 ## Horizontal Line
 
@@ -26,4 +28,20 @@ Size is an HTML attribute.
 <!-- comments go here
 Also here
 blah -->
+```
+
+## Encoding
+
+UTF-8 is generally the standard; includes all characters. 
+
+```
+<meta charset="UTF-8">
+```
+
+## HTML Meta Tags
+
+Description of web site:
+
+```
+<meta name="description" content="description of web page"
 ```
