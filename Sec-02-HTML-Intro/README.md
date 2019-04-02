@@ -1,5 +1,9 @@
 # Section 2 + 3: HTML
 
+## Heading Tags
+
+<h1> through <h7>
+
 ## Horizontal Line
 
 Create with
@@ -15,3 +19,11 @@ Increase size of line:
 ```
 
 Size is an HTML attribute. 
+
+## Comments
+
+```
+<!-- comments go here
+Also here
+blah -->
+```
