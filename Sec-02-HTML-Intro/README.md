@@ -74,3 +74,12 @@ Ordered list
 </ol>
 ```
 
+## Anchor Tags
+
+Download
+
+```
+<a download href="https://www.blah.com/blah.pdf">Download PDF</a>
+```
+
+## Tables
