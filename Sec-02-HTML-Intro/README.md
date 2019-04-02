@@ -45,3 +45,32 @@ Description of web site:
 ```
 <meta name="description" content="description of web page"
 ```
+
+## Italize: < i > vs < em >
+
+The < em > tag stresses emphasis of its contents whereas < i > merely italicizes. 
+
+## Bold: < b > vs < strong >
+
+The < strong > tag indicates that the text has importance. 
+
+## Bullet List
+
+Unordered list
+
+```
+<ul>
+<li> list item 1</li>
+<li> list item 2</li>
+</ul>
+```
+
+Ordered list
+
+```
+<ol>
+<li> list item 1</li>
+<li> list item 2</li>
+</ol>
+```
+
