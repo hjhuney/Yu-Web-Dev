@@ -88,3 +88,25 @@ Table = < table >
 table row = < tr >
 table data = < td >
 
+## Forms
+
+Create a form with < form >. Use labels and inputs:
+
+```
+<form class="" action="homepage.html" method="post">
+    <label for="">Your Name:</label>
+    <input type="text" name=""  value="">
+    <input type="color" name="" value=""><br>
+    <label>Do you want to sign up to the email list?</label>
+    <input type="checkbox">
+    <input type="submit" name=""><br>
+    <label for="">Password:</label>
+    <input type="password">        
+</form>
+```
+
+Input types include text, submit, file, date, radio (button), range. 
+    
+
+
+
