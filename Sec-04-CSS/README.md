@@ -35,6 +35,10 @@ Best to have properties in alphabetical order so it's easier to debug.
 
 Can use tag selectors (global), class selectors (local; can be applied multiple times), or id selectors (local; use only once). The difference between class and id is that class can be used multiple places, while id can only be used one place. Ids will override classes and classes will override tag selectors. 
 
+You can use multiple classes on an element, but can't use multiple id selectors. 
+
+Psuedo-classes (e.g. img:hover); seem more similar to tag selectors. Hover is the most commonly used pseudo-class. Pseudo-classes begin with colon. 
+
 ## Comments
 
 ```
