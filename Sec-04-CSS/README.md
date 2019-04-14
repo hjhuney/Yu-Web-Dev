@@ -197,3 +197,15 @@ For animated gifs
 
 ## CSS Sizing
 
+We can set font size with "font-size" but if we want it to be dynamic, we need to use percentage. 100% font size is equivalent 16px. If we want 90px, we need 562%. The other way to specify dyanmic font size is by using a unit called "em". This "em" is completely different from the tag < em > which is used for emphasis. One "em" was originally width of the capital letter "M", but it's now equivalent to 16px. 
+
+```
+font-size: 5.62em;
+```
+Static sized fonts do not change with browser settings; only dynamically sized fonts change. However, all fonts will scale up with the zoom feature. When using "em", however, the font size is inherited, so if I set the body font size to "2em" and the h1 to "5em", then h1 will be "7em" rather than "5em". This is also the same with percentages. 
+
+Inside CSS3, we can get around this issue by using "rem" (root "em") rather than "em". You can use "rem" and "em" not only with fonts, but also with padding, margins, etc, but Angela Yu prefers to use pixels for those types of attributes. 
+
+## Line Height
+
+Prefered way to specify is by using a value without units. 1 is default typically. 2 is double that. 
