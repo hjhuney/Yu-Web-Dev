@@ -209,3 +209,31 @@ Inside CSS3, we can get around this issue by using "rem" (root "em") rather than
 ## Line Height
 
 Prefered way to specify is by using a value without units. 1 is default typically. 2 is double that. 
+
+## Margin Explanation
+
+This:
+
+```
+margin: 100px auto
+```
+
+100px margin at top, auto margin at right, 100px margin at bottom, auto margin on left
+
+## CSS Float and Clear
+
+Use "float" to set an image to the right or left of text. Use margin-right to then offset the image from the text by a certain amount. For instance. 
+
+```
+.left-image {
+  float: left;
+  margin-right: 30px;
+}
+```
+
+"clear" will make sure the margin is clear. 
+
+
+
+
+
