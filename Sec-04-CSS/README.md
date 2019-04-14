@@ -80,7 +80,7 @@ Padding is space on all 4 edges of box.
 Margin gives space outside border:
 ```
 {margin: 10px;}
-'''
+```
 
 Use margin, padding, border, the width, and height to impact appearance of HTML boxes. 
 
