@@ -129,5 +129,71 @@ You can use "display: none;" or "visibility: hidden;" to hide elements.
 
 For block elements, they take up 100% of width by default, but height is determined by content. 
 
+Positions:
 
+* Static
+* Relative
+* Absolute
+* Fixed
+
+Relative positioning is "relative" to where block would've been normally. 
+
+Coordinates:
+
+* Top 
+* Bottom
+* Left
+* Right
+
+## Absolute Positioning
+
+Absolute positioning is relative to its parent element. 
+
+## Centering Elements in CSS
+
+Two common methods include "text-align" and "margin". If a block element with width set, need "margin". 
+
+## Fonts
+
+Two major font families: Serif and Sans-Serif. Monospace font-family normally used for coding and for projecting code on a website. For most browsers, the default serif is Times font and default sans-serif is Arial. To use specific font from a font-family:
+
+```
+font-family: verdana, sans-serif;
+```
+
+If user does not have font installed, then the browser will use the default font for the font-family. There are web-safe fonts:
+
+[Web-safe Fonts](https://www.w3schools.com/csSref/css_websafe_fonts.asp)
+
+But no font is 100% web safe. 
+
+[Font Usage Stats](https://www.cssfontstack.com/)
+
+Can paste font from that site. For example:
+
+```
+font-family: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif
+```
+
+In above example, font will be Baskerville if they have it, if not, then the order after that font will be Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, and finally any serif they have installed. 
+
+If we want to make sure people see our font, we can use font embedding. 
+
+[Google Fonts](https://fonts.google.com/)
+
+We can select fonts on Google Fonts (+ sign) and then embed the fonts, add code to index.html.
+
+## Adding Content
+
+[Lorem Ipsum Generator](https://loremipsum.io/)
+
+## Icon Images
+
+[flaticon.com](https://www.flaticon.com/)
+
+For animated gifs
+
+[Giphy](https://giphy.com)
+
+## CSS Sizing
 
