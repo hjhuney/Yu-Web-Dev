@@ -86,6 +86,13 @@ Use margin, padding, border, the width, and height to impact appearance of HTML 
 
 ## CSS Display Property
 
+Display values:
+
+* Block
+* Inline
+* Inline-block
+* None
+
 Common block elements:
 
 * Paragraphs 
@@ -93,5 +100,34 @@ Common block elements:
 * Divisions (< div >)
 * Lists and list items (< 0l >, < ul >, and < li >
 * Forms (< form >)
+
+Span elemnet is an in-line design element. Only useful with CSS styling. Can't change width of in-line elements. 
+
+Common in-line elements:
+
+* Spans ( < span >)
+* Images
+* Anchors ( < a >)
+
+To display everything in-line:
+
+```
+p {
+  display: inline;
+```
+
+In-line block:
+
+```
+p {
+  display: inline-block;
+```
+
+You can use "display: none;" or "visibility: hidden;" to hide elements. 
+
+## CSS Static and Relative Positioning
+
+For block elements, they take up 100% of width by default, but height is determined by content. 
+
 
 
