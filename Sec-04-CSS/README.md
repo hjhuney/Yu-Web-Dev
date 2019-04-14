@@ -46,6 +46,52 @@ Psuedo-classes (e.g. img:hover); seem more similar to tag selectors. Hover is th
 comments
 */
 ```
+## HTML Divs
 
+Divs don't do anything without CSS. 
+
+Browser inserts default CSS style. 
+
+## The Box Model
+
+When using percentages with elements, it is relative to the viewpoint. "100%" is 100% of screen. 
+
+Border width shorthand:
+
+```
+{border-width: 0px 10px 20px 30px;}
+```
+
+This is equivalent to:
+
+```
+{border-top: 0px;}
+{border-right: 10px;}
+{border-bottom: 20px;}
+{border-left: 30px;}
+```
+
+Padding is space on all 4 edges of box. 
+
+```
+{padding: 20px;}
+```
+
+Margin gives space outside border:
+```
+{margin: 10px;}
+'''
+
+Use margin, padding, border, the width, and height to impact appearance of HTML boxes. 
+
+## CSS Display Property
+
+Common block elements:
+
+* Paragraphs 
+* Headers
+* Divisions (< div >)
+* Lists and list items (< 0l >, < ul >, and < li >
+* Forms (< form >)
 
 
