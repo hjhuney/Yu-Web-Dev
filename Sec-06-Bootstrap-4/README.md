@@ -27,3 +27,11 @@ Industry standard tool for wireframming is [Balsamiq](https://balsamiq.cloud). Y
 ## The Bootstrap Navigation Bar
 
 The < nav > tag is similar to < div >. It's generally used to indicate the navigation bar. 
+
+## The Bootstrap Grid System
+
+The [Airbnb](https://www.airbnb.com/) website is a good example of the grid system where in a full screen window, it shows 4 listings per row, but can shrink down to 3 or 2 based on the size of the window. 
+
+The grid system has 12 units. If you specify something like column-3 "col-3", it will take up 3 units. "col-6" takes up 6 units (half the screen). 
+
+We can use responsive columns for different size viewports. We can use "col-md-6" to use a 6 unit size column on any viewport that is medium-sized (tablet-sized) or larger. Anything smaller (mobile), it will take up the full width. 
