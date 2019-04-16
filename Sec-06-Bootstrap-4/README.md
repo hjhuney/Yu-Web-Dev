@@ -74,5 +74,44 @@ On top of Bootstrap examples, there is also Bootsnipp.
 
 ## The CSS Z-Index and Stacking Order
 
+To change stacking order in CSS, have to change the Z-index. The default z-index is 0. 
+
+```
+z-index: 1;
+```
+Changing the z-index to 1 for one element would put it on top. If we set an element to -1, it would be in the back. When you have an element that is static (not relative or absolute), the z-index does not apply, but if we give it a position, then the z-index matters.
+
+[Stacking Order Flowchart (PDF)](https://drive.google.com/uc?export=download&id=13Z1_Fgbh3QESIIoFpXUgo1F4sVjB9di2)
+
+
+## Responsive Breakpoints / CSS Media Queries
+
+Example of media query:
+
+```
+@media print {
+
+h1 {
+  color: red;
+  }
+
+}
+```
+Media query is checking to see if something is true or false. 
+
+```
+@media screen (min-width: 900px){
+//change something
+}
+```
+
+Checking to see if viewport width is at least 900px. This could be used to change CSS with a different viewport (desktop vs mobile). This is a media query breakpoint. 
+
+Viewport is size of screen your website is being displayed upon. 
+
+
+
+
+
 
 
