@@ -35,3 +35,11 @@ The [Airbnb](https://www.airbnb.com/) website is a good example of the grid syst
 The grid system has 12 units. If you specify something like column-3 "col-3", it will take up 3 units. "col-6" takes up 6 units (half the screen). 
 
 We can use responsive columns for different size viewports. We can use "col-md-6" to use a 6 unit size column on any viewport that is medium-sized (tablet-sized) or larger. Anything smaller (mobile), it will take up the full width. 
+
+## CSS Style Order of Hierarchy
+
+If you have multiple stylesheets (and CSS and Bootstrap create this scenario), then the stylesheet listed last in the head is the one applied. So if Bootstrap is listed first and CSS "styles.css" 2nd, then the "styles.css" overrides the Bootstrap attributes. Since you'll generally be using the CSS stylesheet to customize things, it should be listed last. This is because in HTML, order of code matters for execution (it does not in CSS and JS). 
+
+## Containers
+
+Containers are automatically responsive. Fluid-containers are automatically the width of the viewport. 
