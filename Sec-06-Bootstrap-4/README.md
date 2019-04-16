@@ -66,5 +66,13 @@ Which will pause if you hover over the slide. "data-ride" can be used to change 
 
 "aria-hidden" is so that visually impaired people who have screen readers do not have to hear all the buttons. 
 
+## Examples
+
+On top of Bootstrap examples, there is also Bootsnipp. 
+
+[Bootsnipp](https://bootsnipp.com)
+
+## The CSS Z-Index and Stacking Order
+
 
 
