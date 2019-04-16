@@ -110,8 +110,12 @@ Checking to see if viewport width is at least 900px. This could be used to chang
 Viewport is size of screen your website is being displayed upon. 
 
 
+## Refactoring
 
-
+1.) Readibility. <br>
+2.) Modularity. How easy is it to re-use parts of your code? <br>
+3.) Efficiency. How fast does your code run? <br>
+4.) Length. 
 
 
 
