@@ -43,3 +43,13 @@ If you have multiple stylesheets (and CSS and Bootstrap create this scenario), t
 ## Containers
 
 Containers are automatically responsive. Fluid-containers are automatically the width of the viewport. 
+
+## Font Awesome
+
+Website with over 900 icon for free commercial use / open-source. 
+
+[Font Awesome](https://fontawesome.com/)
+
+Font Awesome uses the i tag (italics) < i >, just because it's the shortest and doesn't impact anything, but you can use a span if you want to be more syntactically correct. 
+
+
