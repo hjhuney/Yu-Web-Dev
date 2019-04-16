@@ -39,6 +39,12 @@ You can use multiple classes on an element, but can't use multiple id selectors.
 
 Psuedo-classes (e.g. img:hover); seem more similar to tag selectors. Hover is the most commonly used pseudo-class. Pseudo-classes begin with colon. 
 
+## CSS Selector Hierarchy
+
+* (1) Id
+* (2) Class
+* (3) Tag [global]
+
 ## Comments
 
 ```
