@@ -1,4 +1,4 @@
-# Sec 6: Bootstrap 4
+# Sec 6 + 7: Bootstrap 4
 
 Bootstrap is a front-end library that is open-source and was originally developed at Twitter. 
 
@@ -51,5 +51,20 @@ Website with over 900 icon for free commercial use / open-source.
 [Font Awesome](https://fontawesome.com/)
 
 Font Awesome uses the i tag (italics) < i >, just because it's the shortest and doesn't impact anything, but you can use a span if you want to be more syntactically correct. 
+
+## Carousel
+
+In Bootstrap, a carousel is a slideshow. 
+
+You can pause slides by using:
+
+```
+data-pause: "hover"
+```
+
+Which will pause if you hover over the slide. "data-ride" can be used to change auto-play. 
+
+"aria-hidden" is so that visually impaired people who have screen readers do not have to hear all the buttons. 
+
 
 
