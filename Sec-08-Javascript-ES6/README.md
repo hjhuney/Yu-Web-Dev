@@ -105,4 +105,125 @@ x += 2;
 
 ## Functions
 
+Typically use camelCase for function names. 
 
+```
+// creating the function
+function getMilk () {
+  alert("leaveHouse");
+  alert("moveRight");
+  alert("openFridge");
+  alert("pickUpMilk");
+}
+
+// function does not end with a semi-colon
+
+// calling the function
+
+getMilk();
+```
+
+## console.log
+
+Similar to print in Python. Different than alert since it does not open pop-up window. It only shows up in the console and is not meant for the user; it's meant for the developer. 
+
+## Parameters and Arguments
+
+```
+function getMilk (num_bottles) {
+  var cost = num_bottles * 1.5;
+  
+  alert("leaveHouse");
+  alert("moveRight");
+  alert("openFridge");
+  alert("buy " + num_bottles + " bottles of milk");
+  alert("Cost of milk: $ " + cost);
+}
+
+getMilk(12);
+```
+
+## Outputs and Return Values
+
+
+Function with return value. 
+
+```
+function getMilk (num_bottles) {
+  var cost = num_bottles * 1.5;
+  
+  alert("leaveHouse");
+  alert("moveRight");
+  alert("openFridge");
+  alert("buy " + num_bottles + " bottles of milk");
+  
+  return "Cost of milk: $ " + cost;
+  
+}
+
+var costOfMilk = getMilk(12);
+alert(costOfMilk)
+```
+
+BMI Calculator Challenge: 
+
+```
+var yourWeight = prompt("Enter your weight in pounds: ");
+var yourHeight = prompt("Enter your height in inches: ");
+
+function bmiCalculator (weight, height) {
+    var bmi = (weight / Math.pow(height, 2)) * 703;
+
+    return bmi;
+
+}
+
+var yourBMI = bmiCalculator(yourWeight, yourHeight);
+alert("Your BMI is "  + yourBMI);
+```
+
+## Math
+
+Math.random() generates a random 16 decimal place number between 0 and 1 (but not including 1). 
+
+Math.floor() rounds down to an integer. 
+
+## If-Else Statements
+
+Syntax:
+
+```
+if (track === "clear") {
+  goStraight();
+} else {
+  turnRight();
+}
+```
+
+More concrete example:
+
+```
+var loveScore = Math.random() * 100;
+loveScore = Math.floor(loveScore) + 1;
+
+if (loveScore >= 70) {
+    alert("Score of " + loveScore + ". It's a match!");
+} else {
+    alert("Score of " + loveScore + ". Not a match :(" );
+}
+```
+
+# Comparators and Equality
+
+* === is equal to
+* !== is not equal to
+* >= greater than or equal to
+* <= lesser or equal
+
+Difference between triple-equals (===) and double-equals (==) is that triple-equals also checks whether data types match. Double-equals does not care about data types. 
+
+## Combining Comparators
+
+* && AND
+* || OR
+* ! NOT
