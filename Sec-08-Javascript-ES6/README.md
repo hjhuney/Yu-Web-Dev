@@ -290,6 +290,30 @@ alert(output);
 
 If number is divisible by 3, "Fizz". If number is divisible by 5, "Buzz." If divisible by both 3 and 5, "Fizzbuzz." 
 
+My fizzbuzz solution:
 
+
+```
+var output = [];
+var count = 1;
+
+function fizzBuzz() {
+    while (count < 100) {
+      if (count % 3 === 0 && count % 5 === 0) {
+        output.push("fizzbuzz!");
+      } else if (count % 3 === 0) {
+        output.push("fizz");
+      } else if (count % 5 === 0) {
+        output.push("buzz");
+      } else {
+        output.push(count);
+      }
+      count++;
+    }
+    console.log(output);
+}
+
+fizzBuzz();
+```
 
 
