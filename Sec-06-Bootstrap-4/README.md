@@ -149,7 +149,7 @@ Selector1 is the parent, selector 2 is the child within selector1.
 
 ## Selector Priority
 
-* 1.) in-line styling in in html (style=)
+* 1.) in-line styling in html (style=)
 * 2.) id
 * 3.) class
 * 4.) tag / global
