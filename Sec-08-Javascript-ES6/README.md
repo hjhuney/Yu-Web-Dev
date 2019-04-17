@@ -227,3 +227,69 @@ Difference between triple-equals (===) and double-equals (==) is that triple-equ
 * && AND
 * || OR
 * ! NOT
+
+## Arrays
+
+Similar to lists in Python:
+
+```
+var eggs = [1,2,3,4]
+```
+
+To find a single value in an array, works similar to Python:
+
+```
+eggs[0]
+```
+You can use .includes() function to search for a particular item in the array. 
+
+```
+var guests=["Angela","Burt","Jack","Lara"];
+console.log(guests.includes("Lara"))
+```
+
+Mini-challenge to create guest list checker:
+
+```
+var guests=["Angela","Burt","Jack","Lara"];
+
+var guestName = prompt("What is your name?: ");
+
+if (eggs.includes(guestName)) {
+    alert("You are on the guest list!")
+} else {
+    alert("Sorry, your name is not on the guest list")
+}
+```
+
+You can add items to an array with .push(). It always pushes item to the end of the array. 
+
+```
+var output = [];
+
+output.push(5);
+```
+
+You can remove last item from array with .pop(). 
+
+```
+var output = [];
+
+output.push(5);
+output.push(7);
+output.push(9);
+
+alert(output);
+
+// result will be 5,7
+```
+
+
+
+## Fizzbuzz
+
+If number is divisible by 3, "Fizz". If number is divisible by 5, "Buzz." If divisible by both 3 and 5, "Fizzbuzz." 
+
+
+
+
