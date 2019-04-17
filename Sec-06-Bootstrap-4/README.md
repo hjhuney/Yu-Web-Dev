@@ -117,5 +117,43 @@ Viewport is size of screen your website is being displayed upon.
 3.) Efficiency. How fast does your code run? <br>
 4.) Length. 
 
+# Change Class Attributes for a Particular ID
 
+Like this:
 
+```
+#title .container-fluid {
+  attribute: blah blah blah;
+}
+```
+
+## Combining Selectors
+
+Can do multiple selectors like this:
+
+```
+h1, h2, h3, h4 {
+  Attribute: blah blah blah;
+}
+```
+
+Combining two class selectors. 
+ 
+```
+.selector1 .selector2 {
+  attribute: blah blah blah;
+}
+```
+  
+Selector1 is the parent, selector 2 is the child within selector1. 
+
+## Selector Priority
+
+* 1.) in-line styling in in html (style=)
+* 2.) id
+* 3.) class
+* 4.) tag / global
+
+Angela recomends using id's sparingly; she tends to use them for sections. 
+
+You typically want to avoid in-line styling. 
