@@ -316,4 +316,14 @@ function fizzBuzz() {
 fizzBuzz();
 ```
 
+## For Loops
 
+Basic syntax: 
+
+```
+for (var i=0;, i<2; i++) {
+  // do something
+}
+```
+
+The first value is the "starting point." The second value is the "end point". The third value is the "change in the value". 
