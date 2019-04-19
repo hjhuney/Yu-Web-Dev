@@ -139,10 +139,35 @@ $("h1").on("mouseover", function () {
 });
 ```
 
+## Adding and Removing Elements with jQuery
 
+Insert a button before the h1 element. 
 
+```
+$("h1").before("<button>New</button>");
+```
 
+".prepend" will add new HTML element into item you selected just after opening tag. ".append" will be added content of h1 but before end of h1. 
 
+## Website Animations with jQuery
 
+Some methods include .fadeOut, .fadeIn, .slideUp, .slideDown, .hide, .show, .animate. 
 
+.animate() example:
+
+```
+$("button").on("click", function () {
+    $("h1").animate({opacity: 0.5})
+});
+```
+
+Inside .animate() can only change css attributes with numeric values. 
+
+If you want more than 1 animation, you can chain multiple animations together. 
+
+```
+$("button").on("click", function () {
+    $("h1").slideUp().slideDown().animate({opacity: 0.5})
+});
+```
 
