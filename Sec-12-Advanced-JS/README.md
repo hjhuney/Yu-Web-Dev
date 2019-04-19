@@ -153,4 +153,117 @@ for (var i=0; i < numDrumButtons; i++) {
 }
 ```
 
+## Objects, Methods, and Their Dot Notation
+
+```
+function Housekeeper (name, yearsExperience, cleaningRepertoire) {
+    this.name = name;
+    this.yearsExperience = yearsExperience;
+    this.cleaningRepertoire = cleaningRepertoire;
+    this.clean = function () {
+        alert("Cleaning in progress ...");
+    }
+}
+
+var housekeeper1 = new Housekeeper("Tom", 9, ["lobby", "bedroom"]);
+var housekeeper2 = new Housekeeper("Marie", 12, ["bathroom", "hallways"]);
+
+housekeeper1.clean();
+```
+
+
+## Keyboard Event Lisenters to Check for Key Downs (Key Press)
+
+```
+var numDrumButtons = document.querySelectorAll(".drum").length;
+
+var audio = new Audio('sounds/tom-1.mp3');
+
+// Detecting button press
+
+for (var i=0; i < numDrumButtons; i++) {
+    document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+
+        var buttonInnerHTML = this.innerHTML;
+
+        makeSound(buttonInnerHTML);
+
+     });
+}
+
+// detecting keyboard press
+
+document.addEventListener("keypress", function(event) {
+    makeSound(event.key);
+});
+
+function makeSound(key) {
+
+    switch(key) {
+        case "w": 
+            var tom1 = new Audio("sounds/tom-1.mp3");
+            tom1.play();
+            break;
+
+        case "a":
+            var tom2 = new Audio("sounds/tom-2.mp3");
+            tom2.play();
+            break;
+
+        case "s": 
+            var tom3 = new Audio("sounds/tom-3.mp3");
+            tom3.play();
+            break;
+
+        case "d":
+            var tom4 = new Audio("sounds/tom-4.mp3");
+            tom4.play();
+            break;
+
+        case "j": 
+            var snare = new Audio("sounds/snare.mp3");
+            snare.play();
+            break;
+
+        case "k":
+            var crash= new Audio("sounds/crash.mp3");
+            crash.play();
+            break;
+
+        case "l": 
+            var kick = new Audio("sounds/kick-bass.mp3");
+            kick.play();
+            break;
+
+        default: console.log(buttonInnerHTML);
+    }
+}
+```
+
+## Callback Function
+
+Higher order functions can take functions as inputs. A function that gets passed in as an input is a "Callback Function". 
+
+```
+document.addEventListener("keypress", respondToKey(event));
+
+function respondToKey(event) {
+  console.log("key pressed.");
+}
+```
+
+## Timeout Function
+
+[W3: Timeout Method](https://www.w3schools.com/jsref/met_win_settimeout.asp)
+
+For timeout, 2nd parameter is the number of milliseconds before timeout. 
+
+
+
+
+
+
+
+
+
 
