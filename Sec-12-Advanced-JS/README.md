@@ -1,5 +1,7 @@
 # Sec 12: Advanced JS and DOM Manipulation
 
+Finished Project: [Drum Kit Website](https://hjhuney.github.io/Yu-Web-Dev/Sec-12-Advanced-JS/index.html)
+
 ## Adding Event Listeners to a Button
 
 DOM events are sent to notify code of interesting things that have taken place. Event listeners generally have 2 parameters. The first is the type (type of event), the second is a listener which is a JS function. 
