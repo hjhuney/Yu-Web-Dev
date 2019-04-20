@@ -62,6 +62,12 @@ remove a directory
 rm -r directory1
 ```
 
+print current working directory
+
+```
+pwd
+```
+
 You can play a text based adventure game with:
 
 ```
