@@ -62,4 +62,8 @@ remove a directory
 rm -r directory1
 ```
 
+You can play a text based adventure game with:
 
+```
+emacs -batch -l dunnet
+```
