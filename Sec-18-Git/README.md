@@ -98,4 +98,61 @@ can use * in .gitignore file to ignore all files with a certain extention:
 *.txt
 ```
 
+## Branching and Merging
 
+In a scenario where we develop a "main branch" and an "experimental branch", we might eventually want to merge the experimental branch back into the main branch. 
+
+If we want to add a branch called "alien-plot", we could do it like this:
+
+```
+git branch alien-plot
+```
+
+We can see which branch we are in with:
+
+```
+git branch
+```
+
+We can switch branches like this:
+
+```
+git checkout alien-plot
+```
+
+To go back to master branch:
+
+```
+git checkout master
+```
+
+To merge the alien-plot branch to the master:
+
+```
+git merge alien-plot
+```
+
+You will be taken to vim and it will ask for a merge message. We can type:
+
+```
+:q!
+```
+
+Then to push changes to Github. 
+
+```
+git push origin master -u
+```
+
+## Forking and Pull Requests
+
+For open source projects, forking and pull requests allows multiple collaborators to work on the project without messing things up. 
+
+Person A creates project. Puts it on Github. 
+
+Person B forks project. Then makes changes locally. They push those changes to their forked repo. Then they can make a pull request to Person A's repo (suggested changes that could be merged if Person A agrees). 
+
+
+## Git Challenge
+
+[Git Challenges](https://learngitbranching.js.org)
