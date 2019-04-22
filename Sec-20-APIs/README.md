@@ -57,3 +57,61 @@ HTTP Status codes:
 
 
 ## Working with JSONs
+
+JSON stands for Javascript Object Notation. JSON data formatted in key-value pairs (like JS objects). The other common format aside from JSON is XML (Extensible Markup Language). XML looks similar to HTML. 
+
+Convert JS object into JSON format:
+
+```
+JSON.stringify(object1);
+```
+
+Convert JSON back to JS object:
+
+```
+JSON.parse(json1);
+```
+
+If we forget to parse the data, it will come back as 'undefined'. 
+
+```
+app.post("/", function(req, res) {
+
+    request("https://apiv2.bitcoinaverage.com/indices/global/ticker/BTCUSD", function(error, response, body) {
+        
+        var data = JSON.parse(body);
+        var price = data.averages.week;
+
+        res.send("<h1>The average price for Bitcoin this week was " + price + "</h1>");
+
+    });
+})
+```
+
+This will return the last Bitcoin price in US Dollars. In order to add functionality to the menu, we need a variable to store the cryptocurrency and the fiat currency:
+
+```
+app.post("/", function(req, res) {
+
+    // get values selected by user
+    var crypto = req.body.crypto;
+    var fiat = req.body.fiat;
+
+    // concatenante user selected values
+    var baseURL = "https://apiv2.bitcoinaverage.com/indices/global/ticker/"
+    var finalURL = baseURL + crypto + fiat;
+
+    request(finalURL, function(error, response, body) {
+        
+        var data = JSON.parse(body);
+        var price = data.averages.week;
+
+        res.send("<h1>The average price for " + crypto + " this week was " + price + " " + fiat + "</h1>");
+
+    });
+})
+```
+
+Once you use res.send, you can not do others. If you want to send more than 1 thing to the browers, you have to use res.write() and store it instead. 
+
+## 
