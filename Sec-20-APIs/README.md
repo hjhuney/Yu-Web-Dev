@@ -27,7 +27,33 @@ Any API has over 1400 public APIs
 [Any API](https://any-api.com/)
 
 
+## Using the Requests Module to Get Data From API
+
+Project to get Bitcoin data. Create new directory, index.js, index.html. Run:
+
+```
+npm init
+```
+
+Then install express and body-parser. Can install both at same time. 
+
+```
+npm install express body-parser
+```
+
+Request module:
+
+[Request - Simplified HTTP Client](https://www.npmjs.com/package/request)
+
+To install:
+
+```
+npm install request
+```
+
+HTTP Status codes:
+
+[HTTP STatus Codes](https://httpstatuses.com/)
 
 
-
-
+## Working with JSONs
