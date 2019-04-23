@@ -114,4 +114,8 @@ app.post("/", function(req, res) {
 
 Once you use res.send, you can not do others. If you want to send more than 1 thing to the browers, you have to use res.write() and store it instead. 
 
-## 
+## Setting Up Sign-Up Page
+
+In order for server to serve up static files such as CSS and images. We need to use a special function of Express called "static"
+
+
