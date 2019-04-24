@@ -118,4 +118,8 @@ Once you use res.send, you can not do others. If you want to send more than 1 th
 
 In order for server to serve up static files such as CSS and images. We need to use a special function of Express called "static"
 
+## Servers
+
+Heroku allows you to rent their servers for free. You can create up to 5 projects for free with them. 
+
 
