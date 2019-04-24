@@ -154,5 +154,8 @@ It's a <%= kindOfDay %!> day
 Our file name is list.ejs. We use res.render():
 
 ```
-res.render('list', {kindOfDay: 
+res.render('list', {kindOfDay: day});
+```
+
+
 
