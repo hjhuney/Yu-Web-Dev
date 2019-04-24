@@ -1,4 +1,4 @@
-# Sec 20: APIs
+# Sec 20 + 21: APIs + EJS Templates
 
 API is short for Application Programming Interface. An API is a set of commands, functions, protocols, and objects that programmers can use to create software or interact with an external system. It provides developers with standard commands for performing common operations so they do not have to write the code from scratch. 
 
@@ -122,4 +122,37 @@ In order for server to serve up static files such as CSS and images. We need to 
 
 Heroku allows you to rent their servers for free. You can create up to 5 projects for free with them. 
 
+
+## res.write()
+
+We can use res.send() to send information back to our user, but if we need to send multiples pieces of information / more complex info, we would generally want to use res.write(). 
+
+## Embedded JavaScript (EJS) Templating
+
+[EJS](https://ejs.co/)
+
+To install
+
+```
+npm install ejs
+```
+
+To use ejs
+
+```
+app.set("view engine", "ejs");
+```
+
+We need to create a new subfolder called "views" which is where it will look for files. 
+
+Use <%= !> for EJS:
+
+```
+It's a <%= kindOfDay %!> day
+```
+
+Our file name is list.ejs. We use res.render():
+
+```
+res.render('list', {kindOfDay: 
 
