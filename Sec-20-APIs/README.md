@@ -157,5 +157,22 @@ Our file name is list.ejs. We use res.render():
 res.render('list', {kindOfDay: day});
 ```
 
+## Date Conversions
+
+Can use [.toLocaleDateString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString)
+
+```
+    var today = new Date();
+
+    var options = {
+        weekday: "long", 
+        day: "numeric", 
+        month: "long"        
+    };
+
+    var day = today.toLocaleDateString("en-US", options);
+```
+   
+## Scope
 
 
