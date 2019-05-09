@@ -22,3 +22,10 @@ app.get("/", function(req, res) {
 ```
 
 This will render the home page. 
+
+## Rendering Content
+
+Our about page is saved as "about.ejs." Our header is "partials/header.ejs". 
+
+```
+```
