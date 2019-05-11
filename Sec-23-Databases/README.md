@@ -21,3 +21,11 @@ SQL databases are designed as tables and require a schema. If no value for an en
 In Mongo, database will be represented as a JSON object rather than as a table. You would have key-value pairs, so none of the objects have to have the same shape or structured. NoSQL databases are more flexible to changes. 
 
 If you have data with lots of relationships, SQL is generally better. If you have a lot of data of one-to-many type, NoSQL database might be better. NoSQL databases are also more scalable. 
+
+## MongoDB
+
+[How to Download and Install Mongo DB on Windows](https://medium.com/@LondonAppBrewery/how-to-download-install-mongodb-on-windows-4ee4b3493514)
+
+Data directory: MongoDB\Server\4.0\data\
+
+In Bash, type "vim". Press "i" to enter insert mode. 
