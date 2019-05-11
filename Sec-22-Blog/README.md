@@ -75,6 +75,12 @@ app.listen("3000", function() {
 })
 ```
 
+## Getting Blog Posts in Kabob Case
+
+Kabob case is word-hyphen-word format. 
+
+We can use [Lodash](https://lodash.com/) with Node.js to help with this. 
+
 
 
 
