@@ -29,3 +29,52 @@ Our about page is saved as "about.ejs." Our header is "partials/header.ejs".
 
 ```
 ```
+
+
+
+
+
+## For Each 
+
+Alternative to for loop in JS. 
+
+[MDN: For Each](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+```
+var array1 = ['a', 'b', 'c'];
+
+array1.forEach(function(element) {
+  console.log(element);
+});
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+```
+
+## Express Route Parameters
+
+Can use Express to get route dynamically. 
+
+[Express Routing](https://expressjs.com/en/guide/routing.html)
+
+For instance, we have a lot of pages with different topic names:
+
+```
+const express = require("express");
+
+const app = express();
+
+// use :topic so that we can dynamically get the routes
+app.get("/news/:topic", function(req, res) {
+  console.log(req.params.topic);
+});
+
+app.listen("3000", function() {
+  console.log("Server is running on port 3000");
+})
+```
+
+
+
+
