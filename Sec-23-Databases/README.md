@@ -30,7 +30,7 @@ Data directory: MongoDB\Server\4.0\data\
 
 In Bash, type "vim". Press "i" to enter insert mode. 
 
-## CRUD Operations
+## MongoDB: CRUD Operations
 
 CRUD stands for Create Read Update Delete. 
 
@@ -92,3 +92,39 @@ See collections:
 ```
 show collections
 ```
+
+## MongoDB: Reading and Queries
+
+To read database:
+
+```
+db.product.find()
+```
+
+This will read entire collection. You can make specific query like:
+
+```
+db.product.find({name: "pencil"})
+```
+
+This will only find documents where the name field is "pencil". 
+
+Only find documents where price is greater than $1:
+
+```
+db.product.find({price: {$gt: 1})
+```
+
+## MongoDB: How to Updata Data
+
+[Update Documents](https://docs.mongodb.com/manual/tutorial/update-documents/)
+
+Update document to add stock:
+
+```
+db.products.updateOne({_id: 1}, {$set: {stock: 32}}
+```
+
+## MongoDB: Delete
+
+
