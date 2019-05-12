@@ -125,6 +125,13 @@ Update document to add stock:
 db.products.updateOne({_id: 1}, {$set: {stock: 32}}
 ```
 
-## MongoDB: Delete
+## MongoDB: Delete Data
 
+Remove record:
+
+```
+db.products.deleteOne({_id: 2})
+```
+
+## MongoDB: Integrate with Node.js
 
