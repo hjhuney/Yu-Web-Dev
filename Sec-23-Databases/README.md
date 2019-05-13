@@ -147,5 +147,11 @@ In order to use the driver, we can go to:
 
 [Mongoose](https://mongoosejs.com/)
 
+```
+npm i mongoose
+```
+
+
+
 
 
