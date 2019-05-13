@@ -135,3 +135,15 @@ db.products.deleteOne({_id: 2})
 
 ## MongoDB: Integrate with Node.js
 
+Two ways to integrate MongoDB with Node.js. The first is a native MongoDB driver and the 2nd is Mongoose. Mongoose is the most popular way. 
+
+In order to use the driver, we can go to:
+
+[MongoDB Drivers](https://docs.mongodb.com/ecosystem/drivers/)
+
+[Quick Start: MongoDB with Node.js](http://mongodb.github.io/node-mongodb-native/3.2/quick-start/quick-start/)
+
+## Mongoose
+
+
+
